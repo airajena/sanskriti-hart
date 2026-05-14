@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "build:vercel": "vite build && cp -r dist/client/. dist/ && cp index.html dist/index.html",
+    "build:vercel": "vite build && cp -r dist/client/. dist/ && node scripts/fix-index.js",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
