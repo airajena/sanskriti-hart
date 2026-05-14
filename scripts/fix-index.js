@@ -13,7 +13,7 @@ if (mainJs) {
   let indexHtml = fs.readFileSync(path.join(process.cwd(), 'index.html'), 'utf8');
   
   // Replace the script tag
-  indexHtml = indexHtml.replace('/src/start.ts', `/assets/${mainJs}`);
+  indexHtml = indexHtml.replace('/src/main.tsx', `/assets/${mainJs}`);
   
   // Inject the CSS tag if it exists
   if (mainCss) {
